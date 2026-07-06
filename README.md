@@ -105,7 +105,7 @@ cd ToDo-Pro
 **Bikash Ahir**
 
 - GitHub: https://github.com/bikashahir357-oss
-- LinkedIn: *(Add your LinkedIn profile here)*
+- LinkedIn: *(https://www.linkedin.com/in/bikash-yadav-1b4888292)*
 
 ---
 
