@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Pro | Bikash Ahir</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+
+            <h1>
+                <i class="fa-solid fa-list-check"></i>
+                ToDo Pro
+            </h1>
+
+            <button id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </header>
+
+        <!-- Add Task -->
+
+        <div class="add-task">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task">
+
+            <select id="priority">
+
+                <option value="High">🔴 High</option>
+
+                <option value="Medium" selected>
+                    🟡 Medium
+                </option>
+
+                <option value="Low">
+                    🟢 Low
+                </option>
+
+            </select>
+
+            <input type="date" id="dueDate">
+
+            <button id="addBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="search">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Task...">
+
+        </div>
+
+        <!-- Filter -->
+
+        <div class="filters">
+
+            <button class="filter active" data-filter="all">
+
+                All
+
+            </button>
+
+            <button class="filter" data-filter="pending">
+
+                Pending
+
+            </button>
+
+            <button class="filter" data-filter="completed">
+
+                Completed
+
+            </button>
+
+        </div>
+
+        <!-- Dashboard -->
+
+        <div class="dashboard">
+
+            <div class="card">
+
+                <h3>Total</h3>
+
+                <span id="totalTask">
+
+                    0
+
+                </span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Completed</h3>
+
+                <span id="completedTask">
+
+                    0
+
+                </span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Pending</h3>
+
+                <span id="pendingTask">
+
+                    0
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Progress -->
+
+        <div class="progress-container">
+
+            <div class="progress-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+            <p id="progressText">
+
+                0% Completed
+
+            </p>
+
+        </div>
+
+        <!-- Task List -->
+
+        <ul id="taskList">
+
+        </ul>
+
+        <!-- Bottom Buttons -->
+
+        <div class="bottom-buttons">
+
+            <button id="exportBtn">
+
+                Export
+
+            </button>
+
+            <button id="importBtn">
+
+                Import
+
+            </button>
+
+            <button id="clearCompleted">
+
+                Clear Completed
+
+            </button>
+
+            <button id="deleteAll">
+
+                Delete All
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
